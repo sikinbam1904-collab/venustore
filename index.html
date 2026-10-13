@@ -3289,7 +3289,6 @@
             const newReviewData = {
                 name, channel, comment, rating: currentRating, date: dateStr,
                 evidence: evidenceUrl,
-                evidenceImageHost: evidenceUrl ? 'base64' : '',
                 timestamp: db ? firebase.firestore.FieldValue.serverTimestamp() : new Date()
             };
 
